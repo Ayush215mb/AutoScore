@@ -68,7 +68,7 @@ const Homepage = () => {
                 value={studentDetails.degree}
                 onChange={handleChange}
                 className="w-full p-2 border border-gray-300 rounded-lg"
-                placeholder="Enter degree"
+                placeholder="Enter degree(B.Tech/B.SC)"
               />
             </div>
             <div className="w-1/2 p-2">
@@ -79,7 +79,7 @@ const Homepage = () => {
                 value={studentDetails.academicYear}
                 onChange={handleChange}
                 className="w-full p-2 border border-gray-300 rounded-lg"
-                placeholder="Enter academic year"
+                placeholder="Enter academic year(2024-25)"
               />
             </div>
             <div className="w-1/2 p-2">
@@ -90,7 +90,7 @@ const Homepage = () => {
                 value={studentDetails.branch}
                 onChange={handleChange}
                 className="w-full p-2 border border-gray-300 rounded-lg"
-                placeholder="Enter branch"
+                placeholder="Enter branch(CSE(specilization if any)Full Form only)"
               />
             </div>
             <div className="w-1/2 p-2">
@@ -112,7 +112,7 @@ const Homepage = () => {
                 value={studentDetails.year}
                 onChange={handleChange}
                 className="w-full p-2 border border-gray-300 rounded-lg"
-                placeholder="Enter year"
+                placeholder="Enter year(1st/2nd/3rd/4th)"
               />
             </div>
             <div className="w-1/2 p-2">
@@ -123,7 +123,7 @@ const Homepage = () => {
                 value={studentDetails.Semester}
                 onChange={handleChange}
                 className="w-full p-2 border border-gray-300 rounded-lg"
-                placeholder="Enter semester"
+                placeholder="Enter semester(1/2/3/.../8)"
               />
             </div>
             <div className="w-1/2 p-2">

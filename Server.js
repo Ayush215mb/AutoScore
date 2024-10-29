@@ -1,4 +1,3 @@
-import fs from "fs";
 import PDFDocument from "pdfkit";
 import { fileURLToPath } from "url";
 import express from "express";
