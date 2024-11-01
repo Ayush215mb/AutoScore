@@ -18,21 +18,7 @@ const __dirname = path.dirname(__filename);
 app.use(express.static(path.join(__dirname, "dist")));
 app.use(express.json());
 
-// const StudentDetails = {
-//   degree: "B.Tech",
-//   academicYear: "2020-21",
-//   branch: "CSE",
-//   Sname: "Keshav",
-//   year: "1st",
-//   Semester: "1",
-//   CRoll: "10102121",
-//   URoll: "99991111991",
-// };
 let StudentDetails = {};
-
-// app.get("/", (req, res) => {
-//   res.send("homepage");
-// });
 
 // Route to handle incoming POST request with object data
 app.post("/Home", (req, res) => {
@@ -457,10 +443,11 @@ app.get("/download-pdf", (req, res) => {
     .fontSize(10)
     .text("ODD SEMESTER - 2", 150);
 
+  const SemMarks = AddedMarks / 18;
   doc
     .font("Poppins/Poppins-Medium.ttf")
     .fontSize(10)
-    .text(AddedMarks / 18, 300, 460);
+    .text(SemMarks.toFixed(2), 300, 460);
 
   doc.font("Poppins/Poppins-Medium.ttf").fontSize(10).text(" -", 300);
 
