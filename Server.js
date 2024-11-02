@@ -18,6 +18,10 @@ const __dirname = path.dirname(__filename);
 app.use(express.static(path.join(__dirname, "dist")));
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/dist/index.html");
+});
+
 let StudentDetails = {};
 
 // Route to handle incoming POST request with object data
