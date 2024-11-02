@@ -27,14 +27,14 @@ const Homepage = () => {
     sendData();
 
     // Redirect to the backend endpoint for downloading the PDF
-    window.open("http://localhost:3000/download-pdf", "_blank");
+    window.open("https://autoscore.onrender.com/download-pdf", "_blank");
 
     console.log("download success");
   };
 
   const sendData = async () => {
     try {
-      const response = await fetch("http://localhost:3000/Home", {
+      const response = await fetch("https://autoscore.onrender.com/Home", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
